@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+body {
+    background-color: #E7E7E7; /*cor de fundo*/
+    padding-top: 100px; /*margem de cima*/
+}
+
+header{/*cabeçalho*/
+    display: flex; /*para os elementos ficar um do lado do outro.*/
+    align-items: center; /*para ficar centralizado na vertical*/
+    margin-bottom: 40px; /*margem inferior*/
+}
+
+header img {
+    height: 36px; /* tamanho da imagem do logo do cabeçalho*/
+    margin-right: 16px;/*aplicar margem a direita*/ 
+}
+
+header h1{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.container{/* para colocar o conteúdo ou o container na parte central da tela*/
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+form {/*aplicar o diplay flex na área do form para colocar os elementos na mesma posição*/
+    display: flex;
+    max-width: 640px;/*limitar a área*/
+    width: 100%;
+    justify-content: space-between;/*para deixar um espaçamento entre os itens*/
+    margin-bottom: 56px;
+
+}
+form input{/*estilizando os campos das inputs*/
+    font-size: 24px; /*tamanho da fonte*/
+    background-color: #fff;
+    border: none;/*removendo todas as bordas*/
+    border-bottom: 2px solid #000; /*colocando uma borda apenas a abaixo preta*/
+    padding: 8px;/*espaçamento nos elementos*/
+}
+
+form button{/*estilizando o botão*/
+    background-color: #009432;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    padding: 8px;/*espaçamento nos elementos*/
+}
+
+table {
+    width: 100%;
+}
+
+table th {/*estilizar o cabeçalho da tabela*/
+    border-bottom: 2px solid  #000;/*sublinhado do cabeçalho*/
+    padding: 16px;
+    font-size: 24px;
+
+}
+
+table td {
+    text-align: center;
+    font-size: 18px;
+    padding: 16px 0px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+table td img {
+    height: 30px;
+}
+
+.resultado {
+    padding: 8px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #000;
+    border-radius: 3px; /*deixar a borda de uma forma arredondada*/
+}
+
+.aprovado {
+    background-color: #009432;
+}
+
+.reprovado {
+    background-color: red;
+}
